@@ -19,11 +19,11 @@
 2. 提取gamedata文件夹到您的KSP目录。  
 3. 启动KSP和加载保存游戏。  
 4. 服务器窗口应该在向你打招呼了：  
-![](images\server-window-offline.png)
+![](images/server-window-offline.png)
 5. 点击 “Start server” 启动服务器！如果一切顺利的话，灯应该变成快乐的绿色：  
-![](images\server-window-online.png)
+![](images/server-window-online.png)
 6. 你可以通过点击在右上角的关闭按钮或kRPC图标隐藏或显示窗口：  
-![](images\applauncher.png)  
+![](images/applauncher.png)  
 这个图标也会在服务器在线时变为绿色。
 ####1.1.2 配置
 服务器可以通过显示在游戏中的窗口配置，配置选项是：
@@ -97,7 +97,7 @@ print(vessel.name)
 </td></tr></table>
 ####2.1.1 第一部分 发射准备
 本教程使用的2级火箭图片如下。这种火箭的工艺文件可以在这里[下载](http://krpc.github.io/krpc/_downloads/SubOrbitalFlight.craft)，整个的Python脚本在[这里](http://krpc.github.io/krpc/_downloads/SubOrbitalFlight.py)。
-![](images\SubOrbitalFlight.png)  
+![](images/SubOrbitalFlight.png)  
 
 我们需要做的第一件事是加载客户端模块，打开到服务器的连接。我们还可以为我们的脚本起一个描述性的名字，它将出现在游戏里的服务器窗口中：
 
