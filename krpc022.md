@@ -11,7 +11,7 @@
 这个简短的指南介绍kRPC的获取、设置和运行的基础知识，并通过一个基础的Python脚本演示与游戏的通信。
 ###1.1 服务器插件
 ####1.1.1 安装
-1. 从这些地方下载KRPC服务器插件：  
+1. 从这些地方下载kRPC服务器插件：  
     + Github  
     + SpaceDock  
     + Curse  
@@ -19,11 +19,11 @@
 2. 提取gamedata文件夹到您的KSP目录。  
 3. 启动KSP和加载保存游戏。  
 4. 服务器窗口应该在向你打招呼了：  
-![](imags\server-window-offline.png)
+![](images\server-window-offline.png)
 5. 点击 “Start server” 启动服务器！如果一切顺利的话，灯应该变成快乐的绿色：  
-![](imags\server-window-online.png)
+![](images\server-window-online.png)
 6. 你可以通过点击在右上角的关闭按钮或kRPC图标隐藏或显示窗口：  
-![](imags\applauncher.png)  
+![](images\applauncher.png)  
 这个图标也会在服务器在线时变为绿色。
 ####1.1.2 配置
 服务器可以通过显示在游戏中的窗口配置，配置选项是：
@@ -48,7 +48,7 @@
 1. 如果你还没有安装Python，下载Python安装程序并运行它：  
 <https://www.python.org/downloads/windows>  
 运行安装程序时，确保pip已安装妥当。
-2. 安装kRPC Python模块，打开命令提示符并运行以下命令：`C:\Python27\Scripts\pip.exe install krpc`你可能需要更改`C:\Python27`为你的Python实际安装位置。  
+2. 安装krpc Python模块，打开命令提示符并运行以下命令：`C:\Python27\Scripts\pip.exe install krpc`你可能需要更改`C:\Python27`为你的Python实际安装位置。  
 3. 运行Python IDLE（或你喜欢的编辑器）开始编程！
 
 ####1.2.2 在Linux系统中
@@ -64,11 +64,12 @@ vessel = conn.space_center.active_vessel
 print(vessel.name)
 
 ```
-它们做了这些事：第1行加载kRPC Python模块，第2行将打开一个新的连接到服务器，第3行获取激活的飞船，第4行打印出飞船的名字。你可以看到如下内容：  
-![](imags\hello-world.png)
+它们做了这些事：第1行加载kRPCPython模块，第2行将打开一个新的连接到服务器，第3行获取激活的飞船，第4行打印出飞船的名字。你可以看到如下内容：  
+![](images\hello-world.png)
 祝贺你！你完成了你的第一个KSP脚本。
 
 ###1.4 更进一步...
+
 + kRPC一些更有趣的例子，你可以做一下[教程]。
 + 也提供一些其他语言的客户端，包括C++、C#、Java和Lua。
 + 也可以通过其他任何你喜欢的语言与服务器通信——只要它支持网络I/O。
@@ -96,7 +97,7 @@ print(vessel.name)
 </td></tr></table>
 ####2.1.1 第一部分 发射准备
 本教程使用的2级火箭图片如下。这种火箭的工艺文件可以在这里[下载](http://krpc.github.io/krpc/_downloads/SubOrbitalFlight.craft)，整个的Python脚本在[这里](http://krpc.github.io/krpc/_downloads/SubOrbitalFlight.py)。
-![](imags\SubOrbitalFlight.png)  
+![](images\SubOrbitalFlight.png)  
 
 我们需要做的第一件事是加载客户端模块，打开到服务器的连接。我们还可以为我们的脚本起一个描述性的名字，它将出现在游戏里的服务器窗口中：
 
@@ -544,7 +545,7 @@ The following script outputs docking guidance information. It waits until the ve
 下面的脚本输出对接的指导信息。它等待，直到该船被控制从一个码头，和一个停靠端口设置为当前目标。然后，它打印出信息的速度和距离的对接轴。
 
 It uses numpy to do linear algebra on the vectors returned by kRPC – for example computing the dot product or length of a vector – and uses curses for terminal output.  
-它使用numpy做线性代数的向量返回KRPC——例如计算一个向量的点积或长度——并使用curses在终端输出。
+它使用numpy做线性代数的向量返回kRPC——例如计算一个向量的点积或长度——并使用curses在终端输出。
 ```python3
 
 import krpc, curses, time, sys
@@ -559,7 +560,7 @@ curses.noecho()
 
 try:
 
-    # Connect to kRPC
+    # Connect to krpc
     conn = krpc.connect(name='Docking Guidance')
     vessel = conn.space_center.active_vessel
     current = None
