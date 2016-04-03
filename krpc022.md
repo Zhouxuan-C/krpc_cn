@@ -65,7 +65,7 @@ print(vessel.name)
 
 ```
 它们做了这些事：第1行加载kRPCPython模块，第2行将打开一个新的连接到服务器，第3行获取激活的飞船，第4行打印出飞船的名字。你可以看到如下内容：  
-![](images\hello-world.png)
+![](images/hello-world.png)
 祝贺你！你完成了你的第一个KSP脚本。
 
 ###1.4 更进一步...
