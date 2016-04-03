@@ -1,5 +1,5 @@
 # kRPC 0.2.2文档汉化
-####kRPC中文文档请看这里： [krpc022.md](https://github.com/gc313/krpc_cn/krpc022.md)
+####kRPC中文文档请看这里： [krpc022.md](https://github.com/gc313/krpc_cn/blob/master/krpc022.md)
 原始出处请见：<http://krpc.github.io/krpc/index.html>
 
 
