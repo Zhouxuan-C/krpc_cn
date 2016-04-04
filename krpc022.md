@@ -162,7 +162,7 @@ vessel = conn.space_center.active_vessel
 print(vessel.name)
 
 ```
-它们做了这些事：第1行加载kRPCPython模块，第2行将打开一个新的连接到服务器，第3行获取激活的飞船，第4行打印出飞船的名字。你可以看到如下内容：  
+它们做了这些事：第1行加载kRPCPython模块，第2行将打开一个新的连接到服务器，第3行获取激活的飞行器，第4行打印出飞行器的名字。你可以看到如下内容：  
 
 ![](images/hello-world.png)
 
@@ -188,8 +188,8 @@ print(vessel.name)
 这个入门教程使用kRPC送一些小绿人在亚轨道飞行，并安全返回（希望）到Kerbin。它涵盖了以下主题：
 
 + 控制火箭（激活阶段activating stages，设置节流阀）
-+ 使用自动驾驶仪指引飞船到特定方向
-+ 监控飞船的燃料量
++ 使用自动驾驶仪指引飞行器到特定方向
++ 监控飞行器的燃料量
 + 跟踪飞行轨道数据（如高度和远拱点高度）
 
 <table><tr><td bgcolor=#CCFFFF>
@@ -208,7 +208,7 @@ import krpc
 conn = krpc.connect(name='Sub-orbital flight script')
 
 ```
-下一步，我们需要得到一个对象，表示被激活的飞船。正是通过这个对象，我们将指令发送给火箭：
+下一步，我们需要得到一个对象，表示被激活的飞行器。正是通过这个对象，我们将指令发送给火箭：
 
 ```python3
 
@@ -627,7 +627,7 @@ Note that the orientation of the reference frame used to get the direction and v
 请注意，用来得到方向和速度矢量（第7行和第8行）的参考系的方向无所谓，无论坐标轴的方向如何，两个矢量之间的角度是一样的。但是假如我们使用了一个随飞行器移动的参考系，第8行将会返回`(0,0,0)`。因此我们需要一个不与飞行器绑定的参考系。`CelestialBody.reference_frame`就符合这些要求。
 
 ###2.3 发射入轨
-这个教程会发射一个两级火箭并将其送入一个150km的圆形轨道。飞船的文件可以在[这里下载](http://krpc.github.io/krpc/_downloads/LaunchIntoOrbit.craft)
+这个教程会发射一个两级火箭并将其送入一个150km的圆形轨道。飞行器的文件可以在[这里下载](http://krpc.github.io/krpc/_downloads/LaunchIntoOrbit.craft)
 ，Python的脚本[在这里](http://krpc.github.io/krpc/_downloads/LaunchIntoOrbit.py)。  
  
 
@@ -797,7 +797,7 @@ The rocket should now be in a circular 150km orbit above Kerbin.
 ###2.4 俯仰，航向和滚动
 
 The following example calculates the pitch, heading and rolls angles of the active vessel once per second:  
-下面的例子计算了每秒钟活动飞船的俯仰姿态、航向和滚转角：
+下面的例子计算了每秒钟活动飞行器的俯仰姿态、航向和滚转角：
 
 ```python3
 
