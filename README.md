@@ -1,5 +1,9 @@
 # kRPC 0.2.2文档汉化
-####kRPC中文文档请看这里： [krpc022.md](https://github.com/gc313/krpc_cn/blob/master/krpc022.md)
+##kRPC中文文档请看这里： [krpc022.md](https://github.com/gc313/krpc_cn/blob/master/krpc022.md)
+####分章节的文件在[Document](https://github.com/gc313/krpc_cn/tree/master/Document)文件夹里。
+
+####翻译进度可以[看这里](https://github.com/gc313/krpc_cn/blob/master/schedule.md)。
+
 原始出处请见：<http://krpc.github.io/krpc/index.html>
 
 
@@ -19,7 +23,7 @@
 
 + 有些觉得拿不准的地方我保留了英文原文，避免给阅读的人造成误解。
 + 额……关于图片的显示，在Linux系统下完全没问题，在Windows下编辑的话需要把类似于`![](images/test.jpg)`的语句里的`/`改成`\`, 像`![](images\test.jpg)`这样，图片才能在本地调试中正常显示，不知道有没有什么通用的方法，这样改来改去好麻烦……
-+ [krpc022.md](https://github.com/gc313/krpc_cn/blob/master/krpc022.md)文件是一个整体文档，所有的章节都在一个文件里。分章节的文件我放在了Document文件夹里，目前我还不知道到底哪种方式更好一些。
++ [krpc022.md](https://github.com/gc313/krpc_cn/blob/master/krpc022.md)文件是一个整体文档，所有的章节都在一个文件里。分章节的文件我放在了[Document](https://github.com/gc313/krpc_cn/tree/master/Document)文件夹里，目前我还不知道到底哪种方式更好一些。
 
 ####术语
 这是我的翻译，是否适用有待商榷
