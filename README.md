@@ -5,6 +5,7 @@
 ####翻译进度可以[看这里](https://github.com/gc313/krpc_cn/blob/master/schedule.md)。
 
 原始出处请见：<http://krpc.github.io/krpc/index.html>
+本项目地址：<https://github.com/gc313/krpc_cn>
 
 
 

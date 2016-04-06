@@ -2,6 +2,7 @@
 #kRPC V0.2.2 中文文档 
 
 原始出处:<http://krpc.github.io/krpc/index.html>
+本项目地址:<https://github.com/gc313/krpc_cn>
 
 
 kRPC允许你通过游戏外运行的脚本操作坎巴拉太空计划（Kerbal Space Program）。它自带了许多可为流行语言使用的客户端库，包括C++、C #，java，Lua和Python。
@@ -13,7 +14,7 @@ kRPC允许你通过游戏外运行的脚本操作坎巴拉太空计划（Kerbal 
 
 The mod exposes most of KSPs API and includes support for Kerbal Alarm Clock and Infernal Robotics. This functionality is provided to client programs via a Remote Procedure Call server, using protocol buffers for serialization. The server component sets up a TCP/IP server that remote scripts can connect to. This communication could be on the local machine only, over a local network, or even over the wider internet if configured correctly. The server is also extensible. Additional remote procedures (grouped into “services”) can be added to the server using the “Service API”.
 
-KSP公开的API，包括最最高支持kerbal闹钟和地狱的机器人。此功能通过远程过程调用服务器提供给客户端程序，使用协议缓冲区进行序列化。服务器组件设置TCP/IP服务器可以连接到远程脚本。这种通信可以在本地机上，在本地网络，甚至在更广泛的互联网，如果配置正确。该服务器还可扩展。附加的远程程序（分组为“服务”）可以添加到服务器使用“服务接口”。（什么鬼……）
+该MOD公开调用大部分KSPs API接口并包含了对Kerbal Alarm Clock和Infernal Robotics的支持。该功能通过使用Protocol Buffers将结构数据序列化来远程调用服务器。服务器组件设置了一个远程脚本可以连接的TCP/IP服务器。这种通信可以只在本地机器进行，也可以在局域网中，如果进行正确的配置甚至可以在互联网中进行通信。服务器也可以拓展。额外的远程程序（分组为“services”）可以用“Service API”添加到服务器。
 
 
 ###目录
