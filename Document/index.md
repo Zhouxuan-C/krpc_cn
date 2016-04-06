@@ -1,6 +1,6 @@
 #kRPC V0.2.2 中文文档 
 
-原始出处:<http://krpc.github.io/krpc/index.html>
+原始出处:<http://krpc.github.io/krpc/index.html>  
 本项目地址:<https://github.com/gc313/krpc_cn>
 
 kRPC允许你通过游戏外运行的脚本操作坎巴拉太空计划（Kerbal Space Program）。它自带了许多可为流行语言使用的客户端库，包括C++、C #，java，Lua和Python。
