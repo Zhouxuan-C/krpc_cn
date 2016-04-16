@@ -1,4 +1,5 @@
-# kRPC 0.2.2文档汉化
+# kRPC 文档汉化
+（歹势啊！0.2.2还没翻译完，0.2.3都出来了，后面的按0.2.3文档的来，翻译进度里的目录后面我会加上当时的版本号。）
 ##kRPC中文文档请看这里： [krpc022.md](https://github.com/gc313/krpc_cn/blob/master/krpc022.md)
 ####分章节的文件在[Document](https://github.com/gc313/krpc_cn/tree/master/Document)文件夹里。
 
