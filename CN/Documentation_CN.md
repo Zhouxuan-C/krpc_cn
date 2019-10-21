@@ -170,7 +170,77 @@ print(vessel.name)
 
 
 
+以上代码中，`vessel.resources` 返回一个用于获取飞船信息的 `Resources` 对象。接着使用 `Expression` 监听事件，在达到条件时触发。
+
+
+
+#### 第三步：到达远地点
+
+当飞船到达一定高度时，我们执行重力转弯。以下代码示例的是，当飞船到达 10km 时触发事件
+
+```java
+ProcedureCall meanAltitude = connection.getCall(vessel.flight(null), "getMeanAltitude");
+Expression expr = Expression.greaterThan(
+    connection,
+    Expression.call(connection, meanAltitude),
+    Expression.constantDouble(connection, 10000));
+Event event = krpc.addEvent(expr);
+synchronized (event.getCondition()) {
+    event.waitFor();
+}
+```
+
+
+
+上面这段代码中，调用 `vessel.flight()` 用来获取飞船的各种信息，比如它的方向、速度等。
+
+接着我们将飞船调到俯仰 60°，航向 90°. 
+
+```java
+System.out.println("Gravity turn");
+vessel.getAutoPilot().targetPitchAndHeading(60, 90);
+```
+
+
+
+现在我们使用事件，等待远地点到达 100km 时触发降低油门、分离火箭、关闭自动驾驶
+
+```java
+{
+    ProcedureCall apoapsisAltitude = connection.getCall(
+        vessel.getOrbit(), "getApoapsisAltitude");
+    Expression expr = Expression.greaterThan(
+        connection,
+        Expression.call(connection, apoapsisAltitude),
+        Expression.constantDouble(connection, 100000));
+    Event event = krpc.addEvent(expr);
+    synchronized (event.getCondition()) {
+        event.waitFor();
+    }
+}
+
+System.out.println("Launch stage separation");
+vessel.getControl().setThrottle(0);
+Thread.sleep(1000);
+vessel.getControl().activateNextStage();
+vessel.getAutoPilot().disengage();
+```
+
+这段代码中，`vessel.orbit` 会返回一切关于飞船轨道的信息。
+
+
+
+#### 第四步：再入
+
+
+
 TODO 
+
+
+
+
+
+
 
 
 
